@@ -1,0 +1,41 @@
+{
+  "profile_name": "Demo International Business Student",
+  "is_demo": true,
+  "stage": "International undergraduate student",
+  "background": ["Business", "Marketing"],
+  "location": "Melbourne",
+  "target_work_types": ["Part-time", "Internship", "Entry Level"],
+  "target_roles": ["Marketing", "Business Analyst", "Data Analyst", "Operations", "Administration", "AI / Automation", "General Business"],
+  "skills": [
+    "market research", "customer insight", "marketing analysis", "Excel", "Python", "Streamlit",
+    "data analysis", "dashboard building", "AI tools", "content strategy", "business communication"
+  ],
+  "portfolio_projects": [
+    {
+      "name": "MarketSenseAgent",
+      "description": "automates market data analysis and a Telegram report workflow",
+      "skills": ["market research", "marketing analysis", "data analysis", "automation", "reporting"]
+    },
+    {
+      "name": "QuantLabAgent",
+      "description": "provides a quantitative research dashboard and backtesting workflow",
+      "skills": ["Python", "data analysis", "dashboard building", "financial analysis"]
+    },
+    {
+      "name": "VideoExtractSkill",
+      "description": "turns video and image inputs into OCR, transcription, and structured reports",
+      "skills": ["Python", "AI tools", "automation", "reporting"]
+    },
+    {
+      "name": "SocialPainFinderAgent",
+      "description": "classifies social media pain points and converts insights into scored opportunities",
+      "skills": ["customer insight", "market research", "social media", "content strategy"]
+    },
+    {
+      "name": "IdeaScoreAgent",
+      "description": "scores ideas and business opportunities through an explainable local workflow",
+      "skills": ["Streamlit", "dashboard building", "business communication", "data analysis"]
+    }
+  ],
+  "privacy_note": "Synthetic public demo data. Replace locally with your own profile and do not commit private information."
+}

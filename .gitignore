@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+outputs/*
+!outputs/.gitkeep
+.DS_Store
+data/private/
+!data/sample_profile.json
+!data/sample_jobs.csv
+!data/application_tracker.csv
+*.log
