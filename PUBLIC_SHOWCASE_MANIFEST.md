@@ -8,6 +8,12 @@ CareerPilotAgent
 
 CAREER-005-GITHUB-PUBLIC-SHOWCASE
 
+## Published Repository
+
+- URL: `https://github.com/CHENXJC/CareerPilotAgent`
+- Initial showcase commit: `cdba5dbe827ae56613fae26efb50f79135d5d13e`
+- Visibility: Public
+
 ## Public Files Expected
 
 - `app.py`

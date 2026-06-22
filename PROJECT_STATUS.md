@@ -50,6 +50,17 @@ Documentation-only warnings should be reviewed. Any `[action]` warning is publis
 - Screenshot directory: 8 reviewed PNG files referenced by README
 - Private profile path: excluded by `data/private/` ignore rule
 
+## Publication Record
+
+- GitHub repository: `https://github.com/CHENXJC/CareerPilotAgent`
+- Visibility: Public
+- Default branch: `main`
+- Initial public showcase commit: `cdba5dbe827ae56613fae26efb50f79135d5d13e`
+- Automated tests: `14 passed`
+- Public safety check: `PASS` with documentation/context review warnings only
+- Screenshot status: 8 reviewed Demo Profile PNG files published and linked from README
+- Remote data review: public `data/` contains sample and empty tracker files only; `data/private/` is absent
+
 ## Known Limitations
 
 - GitHub metadata and post-push rendering still require final verification after publication.

@@ -151,11 +151,11 @@ Git ignore rules reduce accidental commits but do not make local files a secure 
 
 ## Current Status
 
-CAREER-001 delivered the local MVP, CAREER-002 polished the interface, CAREER-003 added the privacy-first local profile editor, and CAREER-004 prepared the repository structure, documentation, safety tooling, and release checklist for a public GitHub showcase.
+CAREER-001 delivered the local MVP, CAREER-002 polished the interface, CAREER-003 added the privacy-first local profile editor, CAREER-004 prepared the release structure and safety tooling, and CAREER-005 published the reviewed screenshot-integrated showcase on GitHub.
 
 ## Roadmap
 
-- **CAREER-005:** Screenshot integration and GitHub publish
+- **CAREER-005 — complete:** Screenshot integration and GitHub publish
 - **CAREER-006:** Optional OpenAI-enhanced JD analysis
 - **CAREER-007:** Interview question generator
 - **CAREER-008:** Resume version matching

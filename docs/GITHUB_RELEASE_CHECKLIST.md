@@ -7,6 +7,9 @@
 - Public safety check: `PASS` with documentation/context review warnings only
 - Target repository: `https://github.com/CHENXJC/CareerPilotAgent`
 - Private profile and virtual environment: must remain ignored and untracked
+- Initial public showcase commit: `cdba5dbe827ae56613fae26efb50f79135d5d13e`
+- Push status: successful on `main`
+- Remote review: README and 8 screenshots present; private profile absent
 
 ## Before Commit
 
