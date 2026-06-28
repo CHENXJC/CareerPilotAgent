@@ -166,3 +166,9 @@ Any future networked feature must remain optional, explicit, and consistent with
 ## Disclaimer
 
 CareerPilotAgent provides educational and organisational support. Its score is a transparent heuristic, not a prediction of hiring outcomes. Users must verify job requirements, protect personal data, edit all drafts, and take responsibility for every claim and application.
+
+## Managed through AgentHubControlCenter
+
+This project is part of my local-first AI Agent portfolio and can be managed through [AgentHubControlCenter](https://github.com/CHENXJC/AgentHubControlCenter), the central command center for agent manifests, safe actions, useful signals, workflow simulations, connector readiness, approval gates, and public-safe reporting.
+
+CareerPilotAgent is registered as a career operations module in AgentHubControlCenter.

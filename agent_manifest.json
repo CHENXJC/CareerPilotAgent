@@ -1,0 +1,163 @@
+{
+  "agent_id": "career_pilot_agent",
+  "agent_name": "CareerPilotAgent",
+  "category": "career_operations",
+  "project_type": "Agent",
+  "description": "Career workflow assistant for structured career planning, job matching notes, and application task support.",
+  "project_path": "F:\\AIProjects\\CareerPilotAgent",
+  "status": "Complete",
+  "version": "CAREER-006-PIN-COMPLETE",
+  "inputs": [
+    "profile_notes",
+    "job_description",
+    "resume_draft",
+    "application_goal"
+  ],
+  "outputs": [
+    "career_plan",
+    "job_match_notes",
+    "application_tasks",
+    "public_safe_dashboard"
+  ],
+  "actions": [
+    {
+      "action_id": "view_project_status",
+      "label": "View project status",
+      "description": "Review the local PROJECT_STATUS.md checkpoint file.",
+      "action_type": "report_view",
+      "execution_mode": "not_executable",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Open PROJECT_STATUS.md in the project folder.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#career-pilot-agent-view-project-status",
+      "expected_output": "User can see the current checkpoint, validation status, and next stage.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "display_only",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "view_agent_manifest",
+      "label": "View agent manifest",
+      "description": "Review the local agent_manifest.json metadata file.",
+      "action_type": "report_view",
+      "execution_mode": "not_executable",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Open agent_manifest.json in the project folder.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#career-pilot-agent-view-agent-manifest",
+      "expected_output": "User can inspect declared inputs, outputs, actions, connectors, and safety mode.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "display_only",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "open_project_folder",
+      "label": "Open project folder",
+      "description": "Open the local project folder manually outside AgentHub.",
+      "action_type": "local_link",
+      "execution_mode": "manual_only",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "explorer \"F:\\AIProjects\\CareerPilotAgent\"",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#career-pilot-agent-open-project-folder",
+      "expected_output": "User manually opens the local project folder.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "manual_ready",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "manual_run_dashboard",
+      "label": "Manual run dashboard",
+      "description": "Show the manual dashboard launch runbook for the Agent.",
+      "action_type": "manual_instruction",
+      "execution_mode": "manual_only",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "cd /d \"F:\\AIProjects\\CareerPilotAgent\" && streamlit run app.py",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#career-pilot-agent-manual-run-dashboard",
+      "expected_output": "User manually opens the local Streamlit dashboard outside automated execution.",
+      "safety_note": "Display/manual metadata only; AgentHub does not execute this action.",
+      "connector_required": "none",
+      "status": "manual_ready",
+      "enabled": true,
+      "safe_mode": true
+    },
+    {
+      "action_id": "generate_codex_prompt",
+      "label": "Generate Codex prompt",
+      "description": "Generate a copyable Codex prompt for the next safe project task.",
+      "action_type": "codex_prompt",
+      "execution_mode": "template_only",
+      "risk_level": "low",
+      "requires_approval": false,
+      "command_template": "Copy the Agent metadata into the next Codex task prompt.",
+      "runbook_ref": "docs/MANUAL_RUNBOOK.md#career-pilot-agent-generate-codex-prompt",
+      "expected_output": "A copyable prompt template for the next safe Codex task.",
+      "safety_note": "Prompt is for manual copy into Codex; it does not execute project code.",
+      "connector_required": "none",
+      "status": "template_ready",
+      "enabled": true,
+      "safe_mode": true
+    }
+  ],
+  "connectors": [
+    {
+      "connector_id": "local_filesystem",
+      "label": "Local project files",
+      "status": "available_local",
+      "mode": "read_only_manifest_context",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "github_showcase",
+      "label": "GitHub showcase",
+      "status": "available_link",
+      "mode": "display_only",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "streamlit_local_app",
+      "label": "Streamlit local dashboard",
+      "status": "manual_launch",
+      "mode": "display_command_only",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "gmail",
+      "label": "Gmail",
+      "status": "optional_future",
+      "mode": "not_connected",
+      "safe_mode": true
+    },
+    {
+      "connector_id": "notion",
+      "label": "Notion",
+      "status": "planned",
+      "mode": "not_connected",
+      "safe_mode": true
+    }
+  ],
+  "demo_mode": true,
+  "safe_mode": true,
+  "last_run": "Not tracked yet",
+  "next_recommended_action": "Keep paused after public showcase and profile pin; review only from AgentHub.",
+  "github_repo": "https://github.com/CHENXJC/CareerPilotAgent",
+  "dashboard_url": "",
+  "tags": [
+    "Python",
+    "Streamlit",
+    "Career Workflow",
+    "Job Search",
+    "Portfolio"
+  ],
+  "owner": "BPCT / CHENXJC",
+  "public_showcase_status": "GitHub Public Showcase",
+  "pin_status": "Pinned",
+  "action_schema_version": "HUB-V2-005"
+}
